@@ -15,7 +15,7 @@ public class XmlValidation {
 
   public static void main(String[] args) {
 
-    System.out.println("TCBCRV2_SAMPLE_00101.xml validates against CbcXML_v2.0.xsd? "+validateXMLSchema("/temp/XMLValidator/fornituraCbCR_v2.0.xsd", "/temp/XMLValidator/EXPORT.xml"));
+    System.out.println("TCBCRV2_SAMPLE_00101.xml validates against CbcXML_v2.0.xsd? "+validateXMLSchema("/temp/XMLValidator/fornituraCbCR_v2.0.xsd", "/temp/XMLValidator/EXPORT .xml"));
 
 
   }
