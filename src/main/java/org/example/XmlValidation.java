@@ -15,21 +15,19 @@ public class XmlValidation {
 
   public static void main(String[] args) {
 
-    System.out.println("TCBCRV2_SAMPLE_00101.xml validates against CbcXML_v2.0.xsd? "+validateXMLSchema("/temp/XMLValidator/fornituraCbCR_v2.0.xsd", "/temp/XMLValidator/EXPORT .xml"));
-
-
+    System.out.println("ESITO " +
+                         validateXMLSchema("/temp/XMLValidator/ELMACC_000002.xsd", "/temp/XMLValidator/EXPORT_from_gd_system 2.xml"));
   }
 
-  public static boolean validateXMLSchema(String xsdPath, String xmlPath){
+  public static boolean validateXMLSchema(String xsdPath, String xmlPath) {
 
     try {
-      SchemaFactory factory =
-        SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
+      SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
       Schema schema = factory.newSchema(new File(xsdPath));
       Validator validator = schema.newValidator();
       validator.validate(new StreamSource(new File(xmlPath)));
     } catch (IOException | SAXException e) {
-      System.out.println("Exception: "+e.getMessage());
+      System.out.println("Exception: " + e.getMessage());
       return false;
     }
     return true;

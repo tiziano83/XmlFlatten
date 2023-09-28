@@ -29,9 +29,10 @@ public class XmlFlatten {
   public static void main(String[] args) {
     Map<String, NodeDTO> flatNodesMap = new LinkedHashMap<>();
     try {
-      Path filePath = Path.of("/temp/EXPORT.XML");
+      Path filePath = Path.of("/temp/Balance Sheet - Field ID.xml");
 
-      byte[] bytes = Files.readString(filePath).getBytes(StandardCharsets.UTF_8);
+   //   byte[] bytes = Files.readString(filePath).getBytes(StandardCharsets.UTF_8);
+      byte[] bytes = Files.readString(filePath,StandardCharsets.UTF_16LE).getBytes(StandardCharsets.UTF_16LE);
       // byte[] bytes = xml.getBytes(StandardCharsets.UTF_8);
       try (InputStream input = new ByteArrayInputStream(bytes)) {
         Document document = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(input);
@@ -120,8 +121,13 @@ public class XmlFlatten {
   }
 
   private static String cleanNodeName(String tagName) {
-    String[] n = tagName.split(":");
-    return n[1];
+    try {
+      String[] n = tagName.split(":");
+      return n[1];
+    } catch (Exception e) {
+      System.out.println("error "+e.getMessage());
+      return tagName;
+    }
   }
 
   private static void flattXml(Node currentNode, Map<String, NodeDTO> flatNodesMap) {
