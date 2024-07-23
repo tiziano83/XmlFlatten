@@ -1,0 +1,15 @@
+
+g	java:S112M"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ğúù€®1
+O
+java:S2755&"3Disable access to external entities in XML parsing.(ë ÏW8şù€®1
+X	java:S125""<This block of commented-out lines of code should be removed.(ï‘÷š8Íşù€®1
+]	java:S125$"<This block of commented-out lines of code should be removed.(Ïúùúÿÿÿÿÿ8Ïşù€®1
+L	java:S106;"+Replace this use of System.out by a logger.(Å­Ëİúÿÿÿÿ8ïşù€®1
+L	java:S106@"+Replace this use of System.out by a logger.(Å­Ëİúÿÿÿÿ8óşù€®1
+L	java:S106C"+Replace this use of System.out by a logger.(Å­Ëİúÿÿÿÿ8÷şù€®1
+G	java:S106I"+Replace this use of System.out by a logger.(Î’ÛÚ8üşù€®1
+L	java:S106c"+Replace this use of System.out by a logger.(Å­Ëİúÿÿÿÿ8‹ÿù€®1
+L	java:S106i"+Replace this use of System.out by a logger.(Å­Ëİúÿÿÿÿ8ÿù€®1
+H	java:S106€"+Replace this use of System.out by a logger.(ğ—âÁ8Àÿù€®1
+Y	java:S125•"<This block of commented-out lines of code should be removed.(õ€®‰8Òÿù€®1
+^	java:S125˜"<This block of commented-out lines of code should be removed.(İÇ²€ÿÿÿÿÿ8Õÿù€®1

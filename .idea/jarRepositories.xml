@@ -2,9 +2,19 @@
 <project version="4">
   <component name="RemoteRepositoriesConfiguration">
     <remote-repository>
+      <option name="id" value="artifactory-aws-rel" />
+      <option name="name" value="artifactory-aws-rel" />
+      <option name="url" value="http://artifactory-aws.platformteam.saastagetik.internal:8081/artifactory/libs-release" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="central" />
       <option name="name" value="Central Repository" />
       <option name="url" value="https://repo.maven.apache.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="nexus-externa-repo-cache" />
+      <option name="name" value="Nexus External network cache for released artifacts" />
+      <option name="url" value="http://artifactory:8083/repository/maven-public" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="snapshots" />
@@ -20,6 +30,11 @@
       <option name="id" value="nexus-externa-repo-cache" />
       <option name="name" value="Nexus External network cache for released artifacts" />
       <option name="url" value="http://artifactory:8083/repository/maven-public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="artifactory-aws" />
+      <option name="name" value="artifactory-aws" />
+      <option name="url" value="http://artifactory-aws.platformteam.saastagetik.internal:8081/artifactory/libs-snapshot" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="central" />
